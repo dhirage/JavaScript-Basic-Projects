@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triangle</title>
+    <script type="text/javascript">
+      //area of right angle triangle
+      var base = prompt("please enter the base value");
+      var height = prompt("please enter the height value");
+      var area = (base * height) / 2;
+      console.log(
+        "Base: " + base + " Height: " + height + " Area of triangle is: " + area
+      );
+      //   console.log("Area: ", area);
+
+      //area of regular triangle
+      var a = 10;
+      var b = 5;
+      var c = 10;
+      var s = (a + b + c) / 2;
+      var temp = s * (s - a) * (s - b) * (s - c);
+      var area = Math.sqrt(temp);
+      console.log(area);
+
+      //perimeter of triangle
+      var sideA = parseInt(prompt("Please enter the length of side A"));
+      var sideB = parseInt(prompt("Please enter the length of side B"));
+      var sideC = parseInt(prompt("Please enter the length of side C"));
+
+      var perimeter = sideA + sideB + sideC;
+      console.log("Perimeter: ", perimeter);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check palindrome string using array method</title>
+    <script>
+      //palindrome using array
+      var string = prompt("please enter a string");
+      var stringArray = string.split("");
+      var stringArrayRev = stringArray.reverse();
+      var revString = stringArrayRev.join("");
+
+      if (string == revString) {
+        console.log(`${string} is a palindrome`);
+      } else {
+        console.log(`${string} is not a palindrome`);
+      }
+
+      //palindrome using for loop
+
+      var string1 = prompt("please enter a string: ");
+      var len = string1.length;
+      var msg = "it is a palindrome";
+      for (var i = 0; i < len / 2; i++) {
+        if (string1[i] != string1[len - 1 - i]) {
+          //   console.log("it is not a palindrome number");
+          msg = "it is not a palindrome";
+        }
+        // else {
+        //   console.log("it is a palindrome number");
+        // }
+      }
+      console.log(`${string1}: ${msg}`);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finding Largest number</title>
+    <script>
+      // using math.max method
+
+      var num1 = prompt("Enter first number: ");
+      var num2 = prompt("Enter second number: ");
+      var num3 = prompt("Enter third number: ");
+      var maxNum = Math.max(num1, num2, num3);
+      console.log(
+        `Three Numbers are: ${num1},${num2},${num3}: The largest number is ${maxNum}`
+      );
+
+      //using user deffined method
+
+      function check(p, q, r) {
+        if (p >= q && p >= r) {
+          return p;
+        } else if (q >= p && q >= r) {
+          return q;
+        } else {
+          return r;
+        }
+      }
+      var a = prompt("please enter the first number: ");
+      var b = prompt("please enter the second number: ");
+      var c = prompt("please enter the third number: ");
+      var x = check(a, b, c);
+      console.log(`${a},${b},${c} The largest number is ${x}`);
+    </script>
+  </head>
+  <body></body>
+</html>

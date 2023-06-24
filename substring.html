@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check string contains a substring</title>
+    <script>
+      var string = prompt("please enter a string: ");
+      var substring = prompt("please enter a substring: ");
+      var test = string.includes(substring);
+      if (test == true) {
+        console.log(`${string} contains ${substring}`);
+      } else {
+        console.log(`${string} does not contain ${substring}`);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

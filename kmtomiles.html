@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KM to miles</title>
+    <script>
+      function convert() {
+        var kms = document.getElementById("data").value;
+        const factor = 0.621371;
+        var miles = kms * factor;
+        // document.getElementById("result").innerText = `${miles} miles`;
+        document.getElementById("result").innerText = miles + " miles ";
+      }
+    </script>
+    <style>
+      body {
+        background-color: #ffa1a1;
+      }
+      div {
+        text-align: center;
+        align-items: center;
+        margin: 20%;
+        border: 2px solid rgb(26, 99, 226);
+        display: block;
+        border-radius: 5px;
+      }
+      input {
+        border-radius: 5px;
+        border: 2px solid rgb(26, 99, 226);
+        margin: 30px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input type="number" name="" step="any" id="data" /> KMs
+      <button onclick="convert()">Convert</button> Miles
+      <h2 id="result"></h2>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Random Number</title>
+    <script>
+      //it genarates random float number between 0 -1
+      var x = Math.random();
+      console.log("before calculation: " + x);
+      // it generates random float number between 1-10
+      x = x * (10 - 1) + 1;
+      console.log("After Calculation: " + x);
+      //it generates the calculatd values in integer form
+      console.log("floor Calculation: " + Math.floor(x));
+      //it generates random integer number of 4 digit
+      x = x * 1000;
+      console.log("floor Calculation: " + Math.floor(x));
+    </script>
+  </head>
+  <body style="text-align: center">
+    <h1
+      style="
+        color: rgb(127, 2, 245);
+        text-align: center;
+        justify-content: center;
+        background: rgb(247, 153, 153);
+        border: 2px solid purple;
+        border-radius: 4px;
+        display: inline-block;
+      "
+    >
+      Random Number Generator in Console
+    </h1>
+  </body>
+</html>

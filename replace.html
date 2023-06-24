@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>replace character of a string</title>
+    <script>
+      var sentence = prompt("Please enter a sentence: ");
+      var wordToReplace = prompt("Please enter the word to be replaced: ");
+      var replacementWord = prompt("Please enter the replacement word: ");
+      var regex = new RegExp("\\b" + wordToReplace + "\\b", "gi");
+      var newSentence = sentence.replace(regex, replacementWord);
+      console.log(sentence);
+      console.log(newSentence);
+    </script>
+  </head>
+  <body></body>
+</html>

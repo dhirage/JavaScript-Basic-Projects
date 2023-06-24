@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check specific character starts and end of string</title>
+    <script>
+      var string = prompt("please enter a string: ");
+      var testStart = string.startsWith("D");
+      var testEnd = string.endsWith("J");
+      if (testStart == true && testEnd == true) {
+        console.log(`${string} starts with D and ends with J`);
+      } else if (testStart == true && testEnd == false) {
+        console.log(`${string} starts with D only`);
+      } else if (testStart == false && testEnd == true) {
+        console.log(`${string} ends with J only`);
+      } else {
+        console.log(`${string} neither start with D nor end with J`);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
